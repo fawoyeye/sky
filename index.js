@@ -32,9 +32,7 @@ var num = 0;
 				if(num<0){num = arr.length-1};
 					arr[num].style.display="flex";
 	arr[num].style.zIndex="1";
-		setTimeout(function(){
-			arr[num].style.display="none";		
-	},2000);};
+		};
 
  function forward() {
  
@@ -42,9 +40,6 @@ var num = 0;
  if(num >= arr.length){num = 0};	
  	arr[num].style.display="flex";
 	arr[num].style.zIndex="1";
-	setTimeout(function(){
-			arr[num].style.display="none";		
-	},2000);
 };
 setInterval(forward, 2000);
 
