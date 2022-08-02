@@ -27,7 +27,7 @@ span:hover{font-size:1.5rem;color: white;background: blue;}
 .works h1{background: blue;color: white;text-align:center;width: auto;font-family:cursive, sans-serif;}
 .birthday{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;}
 .circle{height: 20px;width: 20px;border-radius: 50%;background: orange;margin: 0.5rem;}
-.circle:hover{background: grey;}
+.circle:hover, .circle:active{background: grey;}
 .circles{display:flex;flex-direction:row;margin: 240px auto 0px auto;align-self:center;justify-content:center;}
 @keyframes circle{0%{margin-left:-1100px;}100%{margin-left:0px;}}
 .block{display:flex}
@@ -38,7 +38,7 @@ span:hover{font-size:1.5rem;color: white;background: blue;}
 .social{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;animation:about 2s 1;}
 .greetings{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;}
 .letter{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;}
-.mobilenav{width: 0vw;height: 100vh;z-index:1;position:fixed;top: 0px;right: 0px;transition:width 0.5s;flex-direction:column;background: orange;color: white;}
+.mobilenav{width: 0vw;height: 100vh;z-index:3;position:fixed;top: 0px;right: 0px;transition:width 0.5s;flex-direction:column;background: orange;color: white;}
 .show{width:75vw}
 .fa{color: blue;font-size:0.7rem;padding: 3px;}
 .mobilenav a{text-decoration:none;color: white;margin: 2rem auto;}
@@ -57,18 +57,18 @@ footer a{text-decoration:underline;color:white;}
 .palette{width: 50px;height: 50px;color: orange;margin:auto;}
 .fa-handshake-angle{font-size:3rem;color: orange;margin:auto;}
 .over{position: relative;margin:50px auto 0px auto;color: orange;}
-
+#circle1, #circle2, #circle3{background: orange;}
 
 
           /*         Why us!!!       */
 .whyus{display:flex;flex-direction:row;justify-content:center;font-size:1rem;color: white;position:relative;}
-.whyus p{text-align:center;line-height:1.5;width: 75vw;margin:auto;color: orange;}
-.slide{width: 70vw;display:none;justify-content:center;flex-direction:column;position:absolute;margin: auto;animation:slide 2s 1;background: white;padding:0 1rem 2rem 0.5rem;}
+.whyus p{text-align:center;line-height:1.5;width: 75vw;margin:auto;color: orange;font-style:italics;}
+.slide{width: 100vw;display:none;justify-content:center;flex-direction:column;position:absolute;margin: auto;animation:slide 3s 1;background: white;padding-bottom:2rem;}
 .whyush1{color: orange;text-align:center;width: 75vw;font-family:cursive, sans-serif;border-radius: 5px;margin:10px auto;}
 h2{font-size:1rem;text-align:center;margin: 2px auto;color: orange;}
 .prev{float:left;color: orange;margin: 1rem;font-size: 1.5rem;z-index:3;position:relative}
 .next{float:right;color: orange;margin: 1rem;font-size: 1.5rem;z-index:3;position:relative}
-@keyframes slide{0%{margin-left:-800px}100%{margin-left:0px;}}
+@keyframes slide{0%{margin-left:-800px}50%{margin-left:0px;}100%{margin-left:800px}}
 .prev:hover{background: blue;}
 .next:hover{background: blue;}
  #strategy, #problems{display:none;}
