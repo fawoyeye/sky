@@ -31,24 +31,59 @@ var arr = [color,problems,strategy];
 var num = -1;
   function back() {
    num--;
+   
+   				
+  
 				if(num<0){num = arr.length-1};
 					arr[num].style.display="flex";
 					arr[num].style.zIndex="1";
 					setTimeout(function(){
 			arr[num].style.display="none";		
 	},2000);
-	
+	if(num == 0){circleOne.style.background="grey"};
+if(num == 1){circleTwo.style.background="grey"};
+if(num == 2){circleThree.style.background="grey"};
+
+
+
 		};
 
  function forward() {
  
  num++;
+ 
+ 				
+ 
  if(num >= arr.length){num = 0};	
  	arr[num].style.display="flex";
  	arr[num].style.zIndex="1";
 setTimeout(function(){
 			arr[num].style.display="none";		
 	},2000);
-	
+	if(num == 0){circleOne.style.background="grey";circleTwo.style.background="orange";circleThree.style.background="orange";};
+if(num == 1){circleTwo.style.background="grey";circleOne.style.background="orange";circleThree.style.background="orange";};
+if(num == 2){circleThree.style.background="grey";circleTwo.style.background="orange";circleOne.style.background="orange";};
+
+
 };
-setInterval(forward, 3000);
+
+setInterval(forward,4000);
+
+circleOne.onclick = function(){
+				color.style.display="flex";
+				strategy.style.display="none";
+				problems.style.display="none";
+};
+
+
+circleTwo.onclick = function(){
+				color.style.display="none";
+				strategy.style.display="none";
+				problems.style.display="flex";
+};
+
+circleThree.onclick = function(){
+				color.style.display="none";
+				strategy.style.display="flex";
+				problems.style.display="none";
+}
