@@ -76,8 +76,8 @@ h2{font-size:1rem;text-align:center;margin: 2px auto;color: orange;}
 
 
 
-@media(min-width:500px){
-	
+@media(min-width:500px) and (max-width:1000px){
+	:root{font-size:3rem}
 	.circles{}
 	.whyus h1{margin:1rem auto;}
 	
