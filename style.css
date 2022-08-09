@@ -45,7 +45,7 @@ span:hover{font-size:1.5rem;color: white;background: blue;}
 .letter{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;}
 .mobilenav{width: 0vw;height: 100vh;z-index:3;position:fixed;top: 0px;right: 0px;transition:width 0.5s;flex-direction:column;background: orange;color: white;}
 .show{width:75vw}
-.fa-linkedin, fa-twitter, fa-instagram, fa-whatsapp{color: blue;font-size:0.7rem;padding: 0.2rem;}
+.fa-linkedin, .fa-twitter, .fa-instagram, .fa-whatsapp, .fa-mail{color: blue;font-size:0.7rem;padding: 0.2rem;}
 .mobilenav a{text-decoration:none;color: white;margin: 2rem auto;}
 .mobilenav li{margin: 1rem auto;}
 hr{width: 50vw;text-align:center;color:white;border-radius: 2px;border:white;height: 3px;}
