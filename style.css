@@ -3,6 +3,10 @@ main{width:auto;overflow-x:hidden;}
 body{max-width: 100vw;overflow:scroll;height: auto;background: white;position:relative;transition:0.5s; 'Edu NSW ACT Foundation', cursive;}
 .fehin{width: 50vw;height:50vw;border-radius: 50%;border:solid 5px blue;margin:1rem auto;}
 .laptop nav{background-image:url(bg.jpg);color: white;width: 100vw;display:none;}
+.laptop nav a{text-decoration:none;color:blue;}
+.laptop nav ol{display:flex;flex-direction:rows;justify-content:space-between;}
+.laptop nav a:hover{background:orange;}
+
 .about ol{list-style:none;display:flex;flex-direction:row;flex-wrap:no-wrap;align-items:center;justify-content:space-between;color: white;font-weight:500;padding: 0.5rem;}
 .list{background: #09b1b7;}
 .logo{width: 2rem;height: inherit;}
