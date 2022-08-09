@@ -113,7 +113,6 @@ circleThree.onclick = function(){
 var w = window.innerWidth;
 
 
-if(w > 360) {slid.classList.remove('slidein');
+
 				
-};
-If(w>1024){open.classList.remove('show')};
+If(w>1024){open.classList.remove('show');color.classList.remove(slidein);strategy.classList.remove(slidein);problems.classList.remove('slidein');};
