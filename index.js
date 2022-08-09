@@ -116,3 +116,4 @@ var w = window.innerWidth;
 if(w > 360) {slid.classList.remove('slidein');
 				
 };
+If(w>1024){open.classList.remove('show')};
