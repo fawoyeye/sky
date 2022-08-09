@@ -115,4 +115,4 @@ var w = window.innerWidth;
 
 
 				
-If(w>1024){open.classList.remove('show');color.classList.remove(slidein);strategy.classList.remove(slidein);problems.classList.remove('slidein');};
+if(w>1024){open.classList.remove('show');color.classList.remove(slidein);strategy.classList.remove(slidein);problems.classList.remove('slidein');};
